@@ -12,7 +12,7 @@ ${Product_Url}  https://admin-demo.nopcommerce.com/admin/Product/List
 ${Browser}      chrome
 
 *** Test Cases ***
-Add_TC_01_Go to Crate Product Page
+Add_TC_01: GO TO CREATE PRODUCT PAGE
     [Documentation]     As an admin, I can go to Create Product see this page
     [Tags]  TC_01
     Verified Access To Page    Products
@@ -22,7 +22,7 @@ Add_TC_01_Go to Crate Product Page
     Verified Save and Contiunue Edit Product Button
     Verified Toggle Button
 
-Add_TC_02_Change Toggle Mode
+Add_TC_02: CHANGE TOGGLE MODE
     [Documentation]     As an admin I can change togle mode from Basic to Advance and the other hand
     [Tags]  TC_02
     Click Add New Product
@@ -32,7 +32,7 @@ Add_TC_02_Change Toggle Mode
     Verified Gift Card, Rental Card, Down loadable Product Card Visible
     Click Toggle Button
 
-Add_TC_03_Add New Product
+Add_TC_03: ADD NEW PRODUCT
     [Documentation]     As an admin, I can add a new product and save it
     [Tags]  TC_03
     Click Add New Product
