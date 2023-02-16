@@ -41,6 +41,6 @@ Add_TC_03_Add New Product
     Input Product Price    1000
     Select Tax Exempt
     Input Shipping Information    10    10    10    10
-    Select Inventory Method    Track inventory
+    Select Inventory Method    Track inventory by product attributes
     Click Save New Product
     Verified Add New Product Successfully
