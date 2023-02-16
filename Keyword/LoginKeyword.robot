@@ -7,6 +7,7 @@ Open My Browser
     [Arguments]     ${url}  ${browser}
     Open Browser    ${url}  ${browser}
     Maximize Browser Window
+
 Enter Email
     [Arguments]     ${email}
     Clear Element Text    ${LoginPage.txtEmail}

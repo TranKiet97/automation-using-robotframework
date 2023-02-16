@@ -8,3 +8,10 @@ class ProductPage:
     goDirectlyToSKU = "//input[@id='GoDirectlyToSku']"
     goBtn = "//input[@id='GoDirectlyToSku']/following-sibling::span/button"
     nonDataCol = "//div[@class='dataTables_scrollBody']//tbody//tr[1]//td"
+    deleteBtn = "//button[@id='delete-selected']"
+    selectAllProductCheckbox = "//th/input[@class='mastercheckbox'][1]"
+    selectCurrentProductCheckbox = "//input[@class='checkboxGroups']"
+    confirmDeleteDialog = "//div[@class='modal-content']"
+    confirmDeleteBtn = "//div[@class='modal-content']//button[@id='delete-selected-action-confirmation-submit-button']"
+    warningMess = "//div[@class='modal-content']//div[@id='nothingSelectedAlert-info']"
+
