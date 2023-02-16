@@ -1,6 +1,7 @@
 *** Settings ***
 Library     SeleniumLibrary
-Variables    ../PageObjects/Locators.py
+Variables    ../Locator/AddNewProductPageLocator.py
+Variables   ../Locator/ProductPageLocator.py
 
 *** Keywords ***
 Click Add New Product

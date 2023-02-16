@@ -1,15 +1,11 @@
 *** Settings ***
 Library     SeleniumLibrary
-Resource    ../Resource/LoginKeyword.robot
-Resource    ../Resource/SearchProductKeyword.robot
-Suite Setup    Login Page    ${Login_Url}    ${Browser}    admin@yourstore.com    admin
-Test Setup     Go To    ${Product_Url}
+Resource    ../Keyword/LoginKeyword.robot
+Resource    ../Keyword/SearchProductKeyword.robot
+Variables    ../Resource/resource.py
+Suite Setup    Login Page    ${WebBrowser.Login_Url}   ${WebBrowser.Chrome_Browser}    admin@yourstore.com    admin
+Test Setup     Go To    ${WebBrowser.Product_Url}
 Suite Teardown   Close Browser
-
-*** Variables ***
-${Login_Url}     https://admin-demo.nopcommerce.com/login
-${Product_Url}  https://admin-demo.nopcommerce.com/admin/Product
-${Browser}      chrome
 
 *** Test Cases ***
 Search_TC_01: COLLAPSE AND EXPAND SEARCH FORM

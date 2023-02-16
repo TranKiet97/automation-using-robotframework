@@ -1,15 +1,11 @@
 *** Settings ***
 Library     SeleniumLibrary
-Resource    ../Resource/LoginKeyword.robot
-Resource    ../Resource/AddNewProductKeyword.robot
-Suite Setup    Login Page    ${Login_Url}    ${Browser}    admin@yourstore.com    admin
-Test Setup     Go To    ${Product_Url}
+Resource    ../Keyword/LoginKeyword.robot
+Resource    ../Keyword/AddNewProductKeyword.robot
+Variables    ../Resource/resource.py
+Suite Setup    Login Page    ${WebBrowser.Login_Url}   ${WebBrowser.Chrome_Browser}    admin@yourstore.com    admin
+Test Setup     Go To    ${WebBrowser.Product_Url}
 Suite Teardown   Close Browser
-
-*** Variables ***
-${Login_Url}     https://admin-demo.nopcommerce.com/login
-${Product_Url}  https://admin-demo.nopcommerce.com/admin/Product/List
-${Browser}      chrome
 
 *** Test Cases ***
 Add_TC_01: GO TO CREATE PRODUCT PAGE

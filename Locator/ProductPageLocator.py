@@ -1,0 +1,10 @@
+class ProductPage:
+    addNewBtn = "//div[contains(@class,'content-header')]//a"
+    collapseBtn = "//div[@class='icon-collapse']"
+    searchBody = "//div[@class='search-body ']"
+    searchProductName = "//input[@id='SearchProductName']"
+    searchProductBtn = "//button[@id='search-products']"
+    productNameCol = "//div[@class='dataTables_scrollBody']//tbody//tr[1]//td[3]"
+    goDirectlyToSKU = "//input[@id='GoDirectlyToSku']"
+    goBtn = "//input[@id='GoDirectlyToSku']/following-sibling::span/button"
+    nonDataCol = "//div[@class='dataTables_scrollBody']//tbody//tr[1]//td"

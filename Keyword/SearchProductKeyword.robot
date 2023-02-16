@@ -1,7 +1,8 @@
 *** Settings ***
 Library     SeleniumLibrary
 Library    XML
-Variables    ../PageObjects/Locators.py
+Variables    ../Locator/ProductPageLocator.py
+Variables   ../Locator/EditProductPageLocator.py
 
 *** Keywords ***
 Click on Collapse Button
