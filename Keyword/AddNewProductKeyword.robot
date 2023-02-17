@@ -40,6 +40,10 @@ Input Short Description
     [Arguments]     ${short_description}
     Input Text    ${AddNewProductPage.txtShortDescription}    ${short_description}
 
+Input Product SKU
+    [Arguments]     ${product_sku}
+    Input Text    ${AddNewProductPage.SKU}    ${product_sku}
+
 Input Product Price
     [Arguments]     ${product_price}
     Execute Javascript    document.querySelector(`${AddNewProductPage.txtPrice}`).value = ${product_price}
@@ -57,6 +61,12 @@ Input Shipping Information
 Select Inventory Method
     [Arguments]     ${inventory_method}
     Select From List By Label    ${AddNewProductPage.inventoryMethod}   ${inventory_method}
+    
+Upload Avatar For Product
+    Choose File    ${AddNewProductPage.uploadAvatarButton}    ${EXECDIR}${/}Resource${/}avatar.png
+
+Verified Upload Avatar Successfully
+    Wait Until Element Is Visible    ${AddNewProductPage.uploadAvatarSuccess}
 
 Click Save New Product
     Click Button    ${AddNewProductPage.saveBtn}

@@ -15,6 +15,7 @@ Search_TC_01: COLLAPSE AND EXPAND SEARCH FORM
     Click on Collapse Button
     Check the Search Form be Unvisible
     Click on Collapse Button
+
 Search_TC_02: SEARCH PRODUCT BY PRODUCT NAME
     [Documentation]     As an admin, I can search for Product by Product Name
     [Tags]  TC_02
@@ -22,12 +23,14 @@ Search_TC_02: SEARCH PRODUCT BY PRODUCT NAME
     Click Search Product Button
     Sleep    3s
     Verified the Product be Displayed on Result Table    Lenovo IdeaCentre 600 All-in-One PC
+
 Search_TC_03: SEARCH PRODUCT DETAILS BY USING PRODUCT SKU
     [Documentation]     As an admin, I can search for Product by Go directly to product SKU
     [Tags]  TC_03
     Input Product SKU    LE_IC_600
     Click Go Button
     Verified the Edit Product Details Page be Displayed    LE_IC_600
+
 Search_TC_04: SEARCH PRODUCT WITH NON-EXIST PRODUCT
     [Documentation]     As an admin, I can't see the search result when input incorrect Product Name
     [Tags]  TC_04
